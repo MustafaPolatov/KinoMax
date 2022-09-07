@@ -8,6 +8,7 @@ import { FaEnvira } from "react-icons/fa"
 import { FaGithubAlt } from "react-icons/fa"
 import { GiCutDiamond } from "react-icons/gi";
 import { AiFillPlayCircle } from "react-icons/ai";
+import { GiSofa } from "react-icons/gi";
 import "./style.css"
 
 export const Home = () => {
@@ -138,15 +139,59 @@ export const Home = () => {
 
         </div>
         <div className="col-3">
-          <div>
-            <div className='bir-right'>
-              <div className="d-flex">
+          <div className='uzun'>
+            <div className='bir-right '>
+              <div className="d-flex pt-3 fon-5">
                 <p className='p-cinema'>The Cinema 3D</p>
                 <p className='ms-3 oclochk'>10:30</p>
               </div>
               <p className='text-center lux-hall'>Lux Hall</p>
+              <div className="sofa">
+                <div className=''>
+                 <div className="liv">
+                 <div className="d-flex   ggg">
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                  </div>
+                  <div className="d-flex text-center gggg">
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                  </div>
+                  <div className="d-flex text-center ggggg">
+                    <p><GiSofa /></p>
+                    <p><GiSofa /></p>
+                  </div>
+                 </div>
+                  <div className='bumaga'>
+                    <div>
+                      <p className='tic-p'>The Grinchs</p>
+                      <p className='tic_p-2'>17th, Dec 10:30</p>
+                      <div className='rihght-tic'>
+                        <p>Hall:</p>
+                        <p>Lux</p>
+                      </div>
+                      <div className='rihght-tic'>
+                        <p>Seats:</p>
+                        <p>B2/B1</p>
+                      </div>
+                      <div className="d-flex">
+                        <p className='dolar'>$26</p>
+                        <button className='gren'>Sell </button>
+                      </div>
+                    </div>
+                    <div className="img-2">
+                      <img src="https://i.pinimg.com/550x/e8/3a/67/e83a673b22d34fed0d7ac7d3f417c233.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
