@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 10px;
-    background-color: rgb(244, 235, 235);
+    background-color: rgb(177, 200, 177, 0.458);
     border-radius: 5px;
     box-shadow: 0px 0px 5px gray;
     border-radius: 10px;
@@ -19,18 +19,16 @@ ul{
 }
 .input-1{
     width: 500px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 5px gray;
-    padding: 5px;
+    padding: 7px;
 }
 .input-2{
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
     outline: none;
-    box-shadow: 0px 0px 5px gray;
-    padding: 5px;
+    padding: 7px;
     margin-right: 20px;
 }
 .icon-1{
@@ -47,7 +45,7 @@ ul{
 }
 .icon-2{
     border: none;
-    background-color: rgb(244, 235, 235);
+    background-color: rgba(177, 200, 177, 0.079);;
     margin: 0px 25px;
     font-size: 25px;
 }
@@ -66,7 +64,7 @@ ul{
 }
 .plastik{
     margin: 10px;
-    background-color: greenyellow;
+    background-color: rgba(172, 255, 47, 0.604);
     padding: 30px 20px;
     border-radius: 10px;
     margin-top: 20px;
@@ -114,7 +112,7 @@ ul{
 }
 .ovr{
     overflow-y: auto;
-    height: 500px;
+    height: 600px;
 }
 .ab{
     position: absolute;
@@ -144,7 +142,7 @@ ul{
     border-radius: 10px;
 }
 .fon-1{
-    max-height: 90vh  !important;
+    max-height: 100vh  !important;
     max-width: 100%;
     position: relative;
     background-color: rgba(255, 255, 255, 0.227)
@@ -183,12 +181,17 @@ ul{
     margin-top: 20px;
 }
 .rik{
-    background-color: rgba(0, 255, 64, 0.303) !important;
-    padding: 3px;
+    background-color: rgba(255, 255, 255) !important;
+    padding: 10px;
+    border-radius: 10px !important;
     transition: 1s;
 }
 .rik img{
     width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    
 }
 .rik:hover{
     transform:translateY(-20px);
@@ -199,4 +202,69 @@ ul{
     font-weight: bold;
     text-align: center;
     padding: 3px;
+}
+.super{
+    height: 100vh !important;
+    background-color: rgba(177, 200, 177, 0.458);
+}
+.dreg{
+    height: 100% !important;
+}
+.menu-left{
+    margin-top: 40px;
+}
+.fon-8{
+    background-color: rgba(177, 200, 177, 0.458);
+}
+.rasm-grinch{
+    width: 100px;
+    margin-top: 20px;
+    height: 100px;
+}
+.rasm-grinch img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 100%;
+    border-radius: 10px;
+}
+.by-ticket{
+    color: black;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-left: 17px;
+}
+.ticket{
+    background-color:rgba(177, 200, 177, 0.458)  !important;
+    height: 100vh;
+    padding: 10px;
+}
+.bilet{
+    background-color: rgba(172, 255, 47, 0.375);
+    padding-left: 15px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.buy{
+    height: 40px;
+    width: 60px;
+    color: white;
+    font-size: 18px;
+    background-color: rgba(55, 129, 55, 0.286);
+    border: none;
+    border-radius: 10px;
+    margin-top: 22px;
+    margin-left: 15px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    height: 100vh !important;
 }

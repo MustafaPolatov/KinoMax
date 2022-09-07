@@ -42,20 +42,20 @@ export const Home = () => {
     )
   }
   function Search(v) {
-    let yangi = data.filter(a=>{
+    let yangi = data.filter(a => {
       return a.title.includes(v)
     })
     setData(yangi)
   }
   return (
-    <div>
+    <div className='asosiy'>
       <div className="menu">
         <ul>
           <li className='icon-1'><FaMoneyBillAlt /></li>
           <li className='zag-1'>CINEMACITY</li>
         </ul>
         <ul>
-          <li><input type="text" className='input-1' placeholder='Search your film' onInput={(v)=>Search(v.target.value) }/> </li>
+          <li><input type="text" className='input-1' placeholder='Search your film' onInput={(v) => Search(v.target.value)} /> </li>
         </ul>
         <ul>
           <input type="text" className='input-2' placeholder='Search' />
@@ -63,9 +63,9 @@ export const Home = () => {
           <button className='icon-2'><FaRegBell /></button>
         </ul>
       </div>
-      <div className="row">
-        <div className="col-3">
-          <div>
+      <div className="row" id='row'>
+        <div className="col-3 super">
+          <div className='dreg'>
             <div className="plastik">
               <div className='d-flex'>
                 <div className='krug'></div>
@@ -97,7 +97,7 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="col-8">
+        <div className="col-6 fon-8">
           <div className="row ovr">
             <div className="col-12">
               <div>
@@ -108,7 +108,7 @@ export const Home = () => {
                         <div>
                           <img src={`https://image.tmdb.org/t/p/original${data[imgbut].backdrop_path}`} alt="" />
                           <div className="ab">
-                            <p className='play-bt' onClick={()=>Boss(data[imgbut])}><AiFillPlayCircle/></p>
+                            <p className='play-bt' onClick={() => Boss(data[imgbut])}><AiFillPlayCircle /></p>
                           </div>
                         </div>
                       )
@@ -116,7 +116,7 @@ export const Home = () => {
                         <h1>err</h1>
                       )
                   }
-                  
+
                 </div>
               </div>
             </div>
@@ -124,7 +124,7 @@ export const Home = () => {
               (data.length > 0)
                 ? (
                   data.map((v, i) => {
-                    return <div className='col-4 mt-4'>
+                    return <div className='col-3 mt-4'>
                       <div className='card rik' onClick={() => Nim(i)}>
                         <img src={`https://image.tmdb.org/t/p/original${v.backdrop_path}`} alt="" />
                         <p className='p-home'>{v.title}</p>
@@ -136,6 +136,48 @@ export const Home = () => {
             }
           </div>
 
+        </div>
+        <div className="col-3">
+          <div>
+            <div className="ticket ">
+            <div className="d-flex bilet">
+            <div className="rasm-grinch">
+                <img src="https://www.film.ru/sites/default/files/movies/posters/4081716-1043520.jpg" alt="" />
+              </div>
+              <div>
+              <p className='by-ticket'>Buy ticket film</p>
+              <div className="d-flex">
+              <p className='by-ticket'>$800</p>
+              <button className='buy'>Buy</button>
+              </div>
+              </div>
+            </div>
+            <div className="d-flex bilet">
+            <div className="rasm-grinch">
+                <img src="https://proprikol.ru/wp-content/uploads/2020/05/kartinki-grincha-6.jpg" alt="" />
+              </div>
+              <div>
+              <p className='by-ticket'>Buy ticket film</p>
+              <div className="d-flex">
+              <p className='by-ticket'>$800</p>
+              <button className='buy'>Buy</button>
+              </div>
+              </div>
+            </div>
+            <div className="d-flex bilet">
+            <div className="rasm-grinch">
+                <img src="https://resizer.mail.ru/p/ddf52fef-042c-599c-b34c-497aba3269d4/dpr:188/AAACXkGOvQ6k_wKE7eguW1tnHZq71y68Zt0BFL9h74_yaiZimaWjfI9aSEThYfxP3iHZDA0QCaviCkyoYal5a5Y1UAk.jpg" alt="" />
+              </div>
+              <div>
+              <p className='by-ticket'>Buy ticket film</p>
+              <div className="d-flex">
+              <p className='by-ticket'>$800</p>
+              <button className='buy'>Buy</button>
+              </div>
+              </div>
+            </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
