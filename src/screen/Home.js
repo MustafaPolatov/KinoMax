@@ -139,43 +139,12 @@ export const Home = () => {
         </div>
         <div className="col-3">
           <div>
-            <div className="ticket ">
-            <div className="d-flex bilet">
-            <div className="rasm-grinch">
-                <img src="https://www.film.ru/sites/default/files/movies/posters/4081716-1043520.jpg" alt="" />
-              </div>
-              <div>
-              <p className='by-ticket'>Buy ticket film</p>
+            <div className='bir-right'>
               <div className="d-flex">
-              <p className='by-ticket'>$800</p>
-              <button className='buy'>Buy</button>
+                <p className='p-cinema'>The Cinema 3D</p>
+                <p className='ms-3 oclochk'>10:30</p>
               </div>
-              </div>
-            </div>
-            <div className="d-flex bilet">
-            <div className="rasm-grinch">
-                <img src="https://proprikol.ru/wp-content/uploads/2020/05/kartinki-grincha-6.jpg" alt="" />
-              </div>
-              <div>
-              <p className='by-ticket'>Buy ticket film</p>
-              <div className="d-flex">
-              <p className='by-ticket'>$800</p>
-              <button className='buy'>Buy</button>
-              </div>
-              </div>
-            </div>
-            <div className="d-flex bilet">
-            <div className="rasm-grinch">
-                <img src="https://resizer.mail.ru/p/ddf52fef-042c-599c-b34c-497aba3269d4/dpr:188/AAACXkGOvQ6k_wKE7eguW1tnHZq71y68Zt0BFL9h74_yaiZimaWjfI9aSEThYfxP3iHZDA0QCaviCkyoYal5a5Y1UAk.jpg" alt="" />
-              </div>
-              <div>
-              <p className='by-ticket'>Buy ticket film</p>
-              <div className="d-flex">
-              <p className='by-ticket'>$800</p>
-              <button className='buy'>Buy</button>
-              </div>
-              </div>
-            </div>
+              <p className='text-center lux-hall'>Lux Hall</p>
             </div>
           </div>
         </div>
